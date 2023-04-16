@@ -1,80 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ngomso Gaya</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <section class="S1">
-        <div class="nav-bar">
-            <h3>Ngomso Gaya</h3>
-            <ul class="nav-menu">
-                <li><a href="#Profile"> Profile </a></li>
-                <li><a href="#Skills"> Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Resume">Resume</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
-        </div>
-    </section>
 
-    <section class="S2">
-        <div class="intro-container">
-        <div class="pic">
-            <img class="selfie" id="Profile" src="myPic.jpg" alt="selfie">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mb-lg-5 mx-lg-auto" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Ngomso Gaya</span>
+                <img src="assets/images/myPic.jpg" class="d-none d-lg-block rounded-circle selfie" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="intro-text-container">
-            <h1> Hello, My Name Is Ngomso Gaya</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nisi similique labore voluptatum rerum explicabo cupiditate atque voluptates. Vel culpa ea officia aperiam voluptates hic ut consequatur numquam odio sapiente?
-        </p>
-        </div>
-        </div>
-    </section>
-    <section class="S1" id="Skills">
-        <h1>Skill Stack</h1>
-        <div class="Skills">
-        <div>
-            <img class="html" src="html.png" alt="htmlimg">
-        <h3>html</h3>
-        </div>
-        <div>
-            <img class="CSS" src="css.png" alt="cssimg">
-        <h3>CSS</h3>
-        </div>
-        <div>
-            <img class="JS" src="JavaScript-.png" alt="javascriptimg">
-            <h3>Java Script</h3>
-        </div>
-        </div>
-    </section>
-    <section class="S2" id="Projects">
-        <h1>Projects</h1>
-        <div>
-            <h2>Front End</h2>
-        </div>
-        <div>
-            <h2>Back End</h2>
-        </div>
-        <div>
-            <h2>Full Stack</h2>
-        </div>
-    </section>
-    <section class="S1">
-        <h5>let's talk</h5>
-    </section>
-    <section class="S2" id="Resume">
-        <h3>Resume</h3>
-        <div>
-            <img src="cv" alt="resume">
-        </div>
-    </section>
-    <section class="S1" id="Contacts">
-        <h4>Contacts</h4>
+    </nav>
+    <!--//NAVBAR-->
 
+<!--CONTENT WRAPPER-->
+<div id="content-wrapper">
+    <!--HOME-->
+    <section id="home" class="full-height px-lg-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand"> WEB DEVELOPER/ENGINEER </span> FROM CAPE TOWN, SA.</h1>
+                <P class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta ipsa, tempore rerum cum debitis iusto nulla mollitia rem consequuntur eligendi aliquid dolores, labore voluptatibus atque earum possimus quia quisquam!</P>
+                <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                <a href="#" class="link-custom">Call (+27) 71 279 9152</a>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
+    <!--//HOME-->
+
+    <!--SERVICE-->
+    <section id="services" class="full-height px-lg-5">
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-8" data-aos="fade-up">
+                    <h6 class="text-brand">SERVICES</h6>
+                    <h1 >Services That I Provide</h1>
+                 </div>
+
+                 <div class="row gy-4">
+                     <div class="col-md-4"data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-feather"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2" >UX/UI Design</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a eaque suscipit ad sint adipisci beatae, explicabo fugiat corrupti quam?</p>
+                             <a href="#" class="link-custom">Read More</a>
+                        </div>
+                     </div>
+                 
+                    <div class="col-md-4"data-aos="fade-up" data-aos-delay="600">
+                       <div class="service p-4 bg-base rounded-4 shadow-effect">
+                           <div class="iconbox rounded-4">
+                            <i class="las la-pencil-ruler"></i>
+                           </div>
+                           <h5 class="mt-4 mb-2" >Branding</h5>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a eaque suscipit ad sint adipisci beatae, explicabo fugiat corrupti quam?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                       </div>
+                    </div>
+                
+                    <div class="col-md-4"data-aos="fade-up" data-aos-delay="900">
+                       <div class="service p-4 bg-base rounded-4 shadow-effect">
+                           <div class="iconbox rounded-4">
+                            <i class="las la-laptop-code"></i>
+                           </div>
+                           <h5 class="mt-4 mb-2" >Web Designing</h5>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae a eaque suscipit ad sint adipisci beatae, explicabo fugiat corrupti quam?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//SERVICES-->
+
+    <!--WORK-->
+    <section id="work" class="full-height px-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                   <h6 class="text-brand">WORK</h6>
+                   <h1 >My Recent Projetcs</h1>
+                </div>
+            </div>
+
+            <div class="row gy-4" >
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                        <div class="card-custom-image rounded-4">
+                            <img class="rounded-4 project1"src="./assets/images/project1.jpg" alt="">
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4>Startup Landing Page</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis optio voluptas sequi labore, repellendus non quod ratione nulla iusto libero?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                        <div class="card-custom-image rounded-4">
+                            <img class="rounded-4 project1"src="./assets/images/project1.jpg" alt="">
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4>Startup Landing Page</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis optio voluptas sequi labore, repellendus non quod ratione nulla iusto libero?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                        <div class="card-custom-image rounded-4">
+                            <img class="rounded-4 project1"src="./assets/images/project1.jpg" alt="">
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4>Startup Landing Page</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis optio voluptas sequi labore, repellendus non quod ratione nulla iusto libero?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                        <div class="card-custom-image rounded-4">
+                            <img class="rounded-4 project1"src="./assets/images/project1.jpg" alt="">
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4>Startup Landing Page</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis optio voluptas sequi labore, repellendus non quod ratione nulla iusto libero?</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--WORK-->
+</div>
+<!--//CONTENT WRAPPER-->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
