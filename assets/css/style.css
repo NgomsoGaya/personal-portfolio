@@ -105,6 +105,10 @@ color: var(--color-brand);
     .selfie {
         border: 8px solid var(--color-brand);
     }
+
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
 }
 
 .btn {
@@ -156,3 +160,20 @@ color: var(--color-brand);
 .card-custom:hover .card-custom-image .project1 {
     transform: scale(1.1);
 } 
+
+.form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 25px;
+}
